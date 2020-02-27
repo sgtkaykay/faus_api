@@ -27,10 +27,10 @@
       </a>
     </div>
     <div class="content">
-			<?php
-			switch ($load) {
-				case 'readone':
-				    require_once('readOne.php');
+	<?php
+	 switch ($load) {
+		case 'readone':
+			 require_once('readOne.php');
 				        break;
 				case 'displaycat':
 			      require_once('displayCat.php');
