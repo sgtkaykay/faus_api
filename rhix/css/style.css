@@ -1,0 +1,298 @@
+*{
+	margin	:	0;
+	padding	:	0;
+	font-family: helvetica;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #2f2f2b; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffd600;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .header a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #ffd600;
+  margin: 6px 0;
+}
+
+.header {
+  padding: 25px;
+  background: #2f2f2b;
+	margin-bottom: 20px;
+}
+
+.content{
+	margin: 0	auto;
+	width:	80%;
+	min-height:	500px;
+	text-align: center;
+	position: relative;
+}
+
+.reg {
+	height:auto;
+	width: 100%;
+	margin: 20px;
+	border-collapse: collapse;
+	display:inline-block;
+}
+
+.reg table, th, td {
+  border: 1px solid black;
+}
+
+.reg th{
+	background-color: #2f2f2b;
+	color: #ffd600;
+	font-size: 16px;
+}
+
+
+.reg th, td{
+	height: 50px;
+	padding: 5px;
+	width: 1015px;
+}
+
+.reg tr:nth-child(even) {background-color: #f2f2f2;}
+
+.reg tr:hover {
+  background-color: #ffd600;
+}
+
+.reg1 {
+	height:auto;
+	width: 100%;
+	margin: 20px;
+	border-collapse: collapse;
+	display:inline-block;
+}
+
+.reg1 table, th, td {
+  border: 1px solid black;
+}
+
+.reg1 th{
+	background-color: #2f2f2b;
+	color: #ffd600;
+	font-size: 16px;
+	width: 150px;
+}
+
+.reg1 td{
+	padding: 10px;
+	text-align: left;
+	color: #2f2f2b;
+	font-size: 16px;
+	width: 865px;
+}
+
+.reg1 th, td{
+	height: 50px;
+}
+
+.reg1 tr:nth-child(odd) {background-color: #f2f2f2;}
+
+input[name=search]{
+	border-radius: 25px;
+	background-image: url(../image/search.png);
+	background-position: 7px 7px;
+ 	background-repeat: no-repeat;
+  padding: 5px 5px 5px 30px;
+  height: 20px;
+  width: 300px;
+  border:1px solid #615d5b;
+  outline:none;
+}
+
+.container{
+	background-color: white;
+	height: auto;
+	width: 30%;
+	margin: 0 auto;
+	display:inline-block;
+	padding: 20px;
+	border: 1px solid grey;
+	border-radius: 25px;
+}
+
+input[type="submit"]{
+  height: 35px;
+	width:120px;
+  border-radius: 25px;
+	padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffd600;
+  color: white;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+input{
+	padding:5px;
+	width:155px;
+	margin:5px;
+	height:18px;
+	border-radius: 25px;
+	border: 1px solid grey;
+}
+
+h1{
+	font-size: 50px;
+	margin-bottom: 15px;
+	color: #ffd600;
+	font-family: 'Bebas Neue', cursive;
+}
+
+p{
+	font-size: 15px;
+	margin: 5px;
+}
+
+.container input{
+	margin: 5px;
+}
+
+.receipt{
+	border:1px solid black;
+	margin: 5px;
+	width: auto;
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+.receipt th, td {
+	padding: 5px;
+  border: none;
+}
+
+.receipt td{
+	font-size: 13px;
+}
+
+.receipt th{
+	background-color: #2f2f2b;
+	color: #fffe2a;
+	font-size: 16px;
+}
+
+.receipt th, td{
+	height: 20px;
+	width: 50px;
+}
+
+.receipt tr th:nth-child(1){
+       width: 80px;
+}
+
+a	{
+	font-size: 25px;
+	margin: 5px;
+	color: #2f2f2b;
+	font-family: 'Roboto Condensed', ;
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+}
+
+.addps{
+	float: right;
+	margin: 5px;
+}
+
+.addps1{
+	float: right;
+	margin: 5px;
+}
+
+.addps ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.addps li{
+	width: 125px;
+}
+
+.addps1 li{
+	width: 125px;
+}
+
+.addps li a{
+	color: white;
+	padding: 8px;
+	text-decoration: none;
+	border	:	1px solid #fff;
+	transition	:	0.6s ease;
+	background-color: red;
+	border-radius: 25px;
+	font-size: 25px;
+}
+.addps li a:hover{
+	background-color: gray;
+}
+
+.addps1 ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.addps1 li a{
+	color: white;
+	padding: 8px;
+	text-decoration: none;
+	border	:	1px solid #fff;
+	transition	:	0.6s ease;
+	background-color: green;
+	border-radius: 25px;
+	font-size: 25px;
+}
+.addps1 li a:hover{
+	background-color: gray;
+}
