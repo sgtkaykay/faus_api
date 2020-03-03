@@ -5,10 +5,9 @@
   $details = array('records' => $data);
   $result = $details['records'];
 
-  $json1 = file_get_contents('http://rdapi.herokuapp.com/category/read.php);
-  $data1 = json_decode($json1,true);
-  $details1 = array('records' => $data1);
-  $result1 = $details1['records'];
+  $jsonCategory = file_get_contents('http://rdapi.herokuapp.com/category/read.php');
+	$categoryData = json_decode($jsonCategory,true);
+	$category = $categoryData['records'];
 ?>
 <div class="container">
   <h1> ADD PRODUCT HERE</h1>
@@ -25,7 +24,7 @@
       <?php
         foreach($list as $result1) { 
       ?>
-      <option value="<?php echo $result1['category_id']?>"><?php echo $result1['category_name']?></option>
+      <option value="<?php echo $category['category_id']?>"><?php echo $category['category_name']?></option>
       <?php 
         } 
       ?>
