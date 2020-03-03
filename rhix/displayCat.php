@@ -5,6 +5,7 @@
 
     $list = $data['records'];
   ?>
+  <h1>Categories</h1>
     <table class="reg">
       <tr>
        <th>Name</th>
