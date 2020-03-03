@@ -19,7 +19,7 @@
     <p>Price:</p>
     <input type="text" name="price" value="<?php echo $result['price']; ?>"/>
     <p>Category:</p>
-    <select name="category">
+    <div><select name="category">
 		<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 	<?php
       foreach($category as $cview){
@@ -28,7 +28,7 @@
     <?php
       }
     ?>
-	  </select><br>
+	    </select><br></div> 
     <input type="submit" name="submit" value="Update"/>
   </form>
 </div>
