@@ -14,15 +14,16 @@
     <p>Price:</p>
     <input type="text" name="price" placeholder="Price"/><br>
     <p>Category:</p>
-    <select>
-      <?php
-        foreach($category as $result1) { 
-      ?>
-      <option value="<?php echo $result1['category_id']?>"><?php echo $result1['category_name']?></option>
-      <?php 
-        } 
-      ?>
-    </select>
+    <select type="text" name="category">
+					<option value="" selected> ---Category--- </option>
+				<?php
+					foreach($category as $catSelect)
+					{
+				?>
+					<option value="<?php echo $catSelect['id']; ?>"> <?php echo $catSelect['name']; ?> </option>
+				<?php
+					}
+				?>
     <input type="submit" name="submit" value="Add"/>
   </form>
 </div>
