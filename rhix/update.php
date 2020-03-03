@@ -25,7 +25,7 @@
       <?php
         foreach($list as $result1) { 
       ?>
-      <option value="<?php echo $result['category_id']?>"><?php echo $result['category_name']?></option>
+      <option value="<?php echo $result1['category_id']?>"><?php echo $result1['category_name']?></option>
       <?php 
         } 
       ?>
