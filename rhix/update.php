@@ -15,7 +15,7 @@
     <p>Price:</p>
     <input type="text" name="price" value="<?php echo $result['price']; ?>"/>
     <p>Category:</p>
-    <input type="text" name="category" value="<?php echo $result['category_name'];?>"/></br>
+    <input type="text" name="category" value="<?php echo $result['category_id'];?>"/></br>
     <input type="submit" name="submit" value="Update"/>
   </form>
 </div>
