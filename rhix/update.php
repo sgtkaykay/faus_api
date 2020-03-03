@@ -6,8 +6,8 @@
   $result = $details['records'];
 
   $json1 = file_get_contents('http://rdapi.herokuapp.com/category/read.php);
-  $data1 = json_decode($json,true);
-  $details1 = array('records' => $data);
+  $data1 = json_decode($json1,true);
+  $details1 = array('records' => $data1);
   $result1 = $details1['records'];
 ?>
 <div class="container">
