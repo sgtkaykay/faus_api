@@ -14,7 +14,8 @@
     <p>Price:</p>
     <input type="text" name="price" placeholder="Price"/><br>
     <p>Category:</p>
-    <select class="custom-select" "type="text" name="category">
+<div class="custom-select" style="width:200px;">
+    <select "type="text" name="category">
 					<option value="" selected> ---Category--- </option>
 				<?php
 					foreach($category as $catSelect)
@@ -24,7 +25,8 @@
 				<?php
 					}
 				?>
-	    </select><br>
+										       </select><br>
+										       </div>
     <input type="submit" name="submit" value="Add"/><br>
 	</form>
 </div>
