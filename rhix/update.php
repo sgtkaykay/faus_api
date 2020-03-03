@@ -19,7 +19,7 @@
     <p>Price:</p>
     <input type="text" name="price" value="<?php echo $result['price']; ?>"/>
     <p>Category:</p>
-    <div><select class="custom-select" name="category">
+    <div class="custom-select" style="width:200px;"><select name="category">
 		<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 	<?php
       foreach($category as $cview){
