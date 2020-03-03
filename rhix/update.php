@@ -28,7 +28,7 @@
     <?php
       }
     ?>
-	</select>
+	  </select></br>
     <input type="submit" name="submit" value="Update"/>
   </form>
 </div>
