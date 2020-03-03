@@ -1,8 +1,7 @@
  <?php 
-  $json1 = file_get_contents('http://rdapi.herokuapp.com/category/read.php);
-  $data1 = json_decode($json1,true);
-  $details1 = array('records' => $data1);
-  $result1 = $details1['records'];
+  $jsonCategory = file_get_contents('http://rdapi.herokuapp.com/category/read.php');
+  $categoryData = json_decode($jsonCategory,true);
+  $category = $categoryData['records'];
  ?>
 
 <div class="container">
@@ -17,7 +16,7 @@
     <p>Category:</p>
     <select>
       <?php
-        foreach($list as $result1) { 
+        foreach($category as $result1) { 
       ?>
       <option value="<?php echo $result1['category_id']?>"><?php echo $result1['category_name']?></option>
       <?php 
