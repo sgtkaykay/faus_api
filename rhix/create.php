@@ -14,7 +14,7 @@
     <p>Price:</p>
     <input type="text" name="price" placeholder="Price"/><br>
     <p>Category:</p>
-    <select type="text" name="category">
+    <select class="custom-select" "type="text" name="category">
 					<option value="" selected> ---Category--- </option>
 				<?php
 					foreach($category as $catSelect)
