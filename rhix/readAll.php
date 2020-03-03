@@ -12,21 +12,27 @@
 		}
 	$list = $data['records'];
 ?>
- <h1>Product List</h1>
+<h1>Product List</h1>
 <form method="POST" action="index.php">
-	<input type="text" name="search" placeholder="Search Product">
+ <input type="text" name="search" placeholder="Search Product">
 </form>
 <table class="reg">
-	<tr>
-    <th>Name</th>
-  </tr>
-  <?php
+ <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Price</th>
+  <th>Category</th>
+ </tr>
+   <?php
     foreach($list as $result){
-  ?>
-  <tr>
-   	<td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['name']; ?></a></td>
-  </tr>
-  <?php
-    }
-  ?>
+   ?>
+ <tr>
+   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['name']; ?></a></td>
+   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['description']; ?></a></td>
+   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['price']; ?></a></td>
+   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['category_name']; ?></a></td>
+ </tr>
+   <?php
+     }
+   ?>
 </table>
