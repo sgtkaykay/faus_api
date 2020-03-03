@@ -24,6 +24,6 @@
 				<?php
 					}
 				?>
-    <input type="submit" name="submit" value="Add"/>
-  </form>
+    <input type="submit" name="submit" value="Add"/><br>
+	</form>
 </div>
