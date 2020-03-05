@@ -8,6 +8,7 @@
   <h1>Categories</h1>
     <table class="reg">
       <tr>
+       <th>ID</th>
        <th>Name</th>
        <th>Description</th>
       </tr>
@@ -15,6 +16,7 @@
      foreach($list as $result){
     ?>
     <tr>
+      <td> <?php echo $result['id']; ?></a> </td>
       <td> <?php echo $result['name']; ?></a> </td>
       <td> <?php echo $result['description']; ?></a> </td>
     </tr>
